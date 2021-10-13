@@ -62,42 +62,101 @@ CMAKE_BINARY_DIR = C:\Users\Acer\CLionProjects\untitled\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/untitled.dir/all
+all: simpleCalc/all
+all: allocation_basics/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: simpleCalc/preinstall
+preinstall: allocation_basics/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/untitled.dir/clean
+clean: simpleCalc/clean
+clean: allocation_basics/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/untitled.dir
+# Directory level rules for directory allocation_basics
+
+# Recursive "all" directory target.
+allocation_basics/all: allocation_basics/CMakeFiles/allocation_basics.dir/all
+.PHONY : allocation_basics/all
+
+# Recursive "preinstall" directory target.
+allocation_basics/preinstall:
+.PHONY : allocation_basics/preinstall
+
+# Recursive "clean" directory target.
+allocation_basics/clean: allocation_basics/CMakeFiles/allocation_basics.dir/clean
+.PHONY : allocation_basics/clean
+
+#=============================================================================
+# Directory level rules for directory simpleCalc
+
+# Recursive "all" directory target.
+simpleCalc/all: simpleCalc/CMakeFiles/simpleCalc.dir/all
+.PHONY : simpleCalc/all
+
+# Recursive "preinstall" directory target.
+simpleCalc/preinstall:
+.PHONY : simpleCalc/preinstall
+
+# Recursive "clean" directory target.
+simpleCalc/clean: simpleCalc/CMakeFiles/simpleCalc.dir/clean
+.PHONY : simpleCalc/clean
+
+#=============================================================================
+# Target rules for target simpleCalc/CMakeFiles/simpleCalc.dir
 
 # All Build rule for target.
-CMakeFiles/untitled.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Acer\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target untitled"
-.PHONY : CMakeFiles/untitled.dir/all
+simpleCalc/CMakeFiles/simpleCalc.dir/all:
+	$(MAKE) $(MAKESILENT) -f simpleCalc\CMakeFiles\simpleCalc.dir\build.make simpleCalc/CMakeFiles/simpleCalc.dir/depend
+	$(MAKE) $(MAKESILENT) -f simpleCalc\CMakeFiles\simpleCalc.dir\build.make simpleCalc/CMakeFiles/simpleCalc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Acer\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target simpleCalc"
+.PHONY : simpleCalc/CMakeFiles/simpleCalc.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/untitled.dir/rule: cmake_check_build_system
+simpleCalc/CMakeFiles/simpleCalc.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Acer\CLionProjects\untitled\cmake-build-debug\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/untitled.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 simpleCalc/CMakeFiles/simpleCalc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Acer\CLionProjects\untitled\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/untitled.dir/rule
+.PHONY : simpleCalc/CMakeFiles/simpleCalc.dir/rule
 
 # Convenience name for target.
-untitled: CMakeFiles/untitled.dir/rule
-.PHONY : untitled
+simpleCalc: simpleCalc/CMakeFiles/simpleCalc.dir/rule
+.PHONY : simpleCalc
 
 # clean rule for target.
-CMakeFiles/untitled.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/clean
-.PHONY : CMakeFiles/untitled.dir/clean
+simpleCalc/CMakeFiles/simpleCalc.dir/clean:
+	$(MAKE) $(MAKESILENT) -f simpleCalc\CMakeFiles\simpleCalc.dir\build.make simpleCalc/CMakeFiles/simpleCalc.dir/clean
+.PHONY : simpleCalc/CMakeFiles/simpleCalc.dir/clean
+
+#=============================================================================
+# Target rules for target allocation_basics/CMakeFiles/allocation_basics.dir
+
+# All Build rule for target.
+allocation_basics/CMakeFiles/allocation_basics.dir/all:
+	$(MAKE) $(MAKESILENT) -f allocation_basics\CMakeFiles\allocation_basics.dir\build.make allocation_basics/CMakeFiles/allocation_basics.dir/depend
+	$(MAKE) $(MAKESILENT) -f allocation_basics\CMakeFiles\allocation_basics.dir\build.make allocation_basics/CMakeFiles/allocation_basics.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Acer\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target allocation_basics"
+.PHONY : allocation_basics/CMakeFiles/allocation_basics.dir/all
+
+# Build rule for subdir invocation for target.
+allocation_basics/CMakeFiles/allocation_basics.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Acer\CLionProjects\untitled\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocation_basics/CMakeFiles/allocation_basics.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Acer\CLionProjects\untitled\cmake-build-debug\CMakeFiles 0
+.PHONY : allocation_basics/CMakeFiles/allocation_basics.dir/rule
+
+# Convenience name for target.
+allocation_basics: allocation_basics/CMakeFiles/allocation_basics.dir/rule
+.PHONY : allocation_basics
+
+# clean rule for target.
+allocation_basics/CMakeFiles/allocation_basics.dir/clean:
+	$(MAKE) $(MAKESILENT) -f allocation_basics\CMakeFiles\allocation_basics.dir\build.make allocation_basics/CMakeFiles/allocation_basics.dir/clean
+.PHONY : allocation_basics/CMakeFiles/allocation_basics.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

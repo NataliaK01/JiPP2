@@ -165,7 +165,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=untitled
+CMAKE_PROJECT_NAME:STATIC=JiPP
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/ranlib.exe
@@ -246,6 +246,24 @@ CMAKE_STRIP:FILEPATH=C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Value Computed by CMake
+JiPP_BINARY_DIR:STATIC=C:/Users/Acer/CLionProjects/untitled/cmake-build-debug
+
+//Value Computed by CMake
+JiPP_SOURCE_DIR:STATIC=C:/Users/Acer/CLionProjects/untitled
+
+//Value Computed by CMake
+allocation_basics_BINARY_DIR:STATIC=C:/Users/Acer/CLionProjects/untitled/cmake-build-debug/allocation_basics
+
+//Value Computed by CMake
+allocation_basics_SOURCE_DIR:STATIC=C:/Users/Acer/CLionProjects/untitled/allocation_basics
+
+//Value Computed by CMake
+simpleCalc_BINARY_DIR:STATIC=C:/Users/Acer/CLionProjects/untitled/cmake-build-debug/simpleCalc
+
+//Value Computed by CMake
+simpleCalc_SOURCE_DIR:STATIC=C:/Users/Acer/CLionProjects/untitled/simpleCalc
 
 //Value Computed by CMake
 untitled_BINARY_DIR:STATIC=C:/Users/Acer/CLionProjects/untitled/cmake-build-debug
@@ -366,7 +384,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

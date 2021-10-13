@@ -1,3 +1,8 @@
 C:/Users/Acer/CLionProjects/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Acer/CLionProjects/untitled/cmake-build-debug/CMakeFiles/untitled.dir
 C:/Users/Acer/CLionProjects/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Acer/CLionProjects/untitled/cmake-build-debug/simpleCalc/CMakeFiles/simpleCalc.dir
+C:/Users/Acer/CLionProjects/untitled/cmake-build-debug/simpleCalc/CMakeFiles/edit_cache.dir
+C:/Users/Acer/CLionProjects/untitled/cmake-build-debug/simpleCalc/CMakeFiles/rebuild_cache.dir
+C:/Users/Acer/CLionProjects/untitled/cmake-build-debug/allocation_basics/CMakeFiles/allocation_basics.dir
+C:/Users/Acer/CLionProjects/untitled/cmake-build-debug/allocation_basics/CMakeFiles/edit_cache.dir
+C:/Users/Acer/CLionProjects/untitled/cmake-build-debug/allocation_basics/CMakeFiles/rebuild_cache.dir

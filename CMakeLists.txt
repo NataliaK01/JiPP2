@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
-project(untitled)
+project(JiPP)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(untitled main.cpp)
+add_subdirectory(simpleCalc)
+
+add_subdirectory(allocation_basics)
