@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Acer/CLionProjects/untitled/simpleCalc/include/calc.h
+iostream
+-
+cstring
+-
+
+C:/Users/Acer/CLionProjects/untitled/simpleCalc/src/main.cpp
+iostream
+-
+../include/calc.h
+C:/Users/Acer/CLionProjects/untitled/simpleCalc/include/calc.h
+
