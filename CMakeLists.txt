@@ -11,3 +11,6 @@ add_subdirectory(pole_figury)
 
 add_subdirectory(lab_3_zad_2)
 
+add_subdirectory(lab_3_zad_3)
+
+
