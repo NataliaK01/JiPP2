@@ -6,3 +6,5 @@ set(CMAKE_CXX_STANDARD 14)
 add_subdirectory(simpleCalc)
 
 add_subdirectory(allocation_basics)
+
+add_subdirectory(pole_figury)
