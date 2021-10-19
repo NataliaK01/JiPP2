@@ -8,3 +8,6 @@ add_subdirectory(simpleCalc)
 add_subdirectory(allocation_basics)
 
 add_subdirectory(pole_figury)
+
+add_subdirectory(lab_3_zad_2)
+
