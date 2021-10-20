@@ -19,3 +19,5 @@ add_subdirectory(lab_3_zad_6)
 
 add_subdirectory(lab_3_zad_7)
 
+add_subdirectory(lab_3_zad_8)
+
