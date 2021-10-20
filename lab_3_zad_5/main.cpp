@@ -1,5 +1,5 @@
 #include <iostream>
-#include<cstdlib>
+#include <cstdlib>
 using namespace std;
 
 void srednia(double *x, double *y)
