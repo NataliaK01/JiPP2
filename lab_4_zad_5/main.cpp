@@ -4,23 +4,34 @@ using namespace std;
 
 class Prostopadloscian
 {
-public:
+private:
     double a;
     double b;
     double c;
+
+public:
+    void set_a_b_c(double x, double y, double z){
+        a = x;
+        b = y;
+        c = z;
+    }
+    double get_a_b_c(double x, double y, double z){
+        return 2*(x*y+x*z+y*z);
+    }
 };
-double pole(int x, int y, int z){
- return 2*(x*y+x*z+y*z);
-}
 int main(){
 
-    Prostopadloscian p1;
-    p1.a=1;
-    p1.b=2;
-    p1.c=3;
-
-    cout<< pole(p1.a,p1.b,p1.c);
-
+    Prostopadloscian pole;
+    double x, y, z, wynik;
+    cout<<"Podaj a: "<<endl;
+    cin>>x;
+    cout<<"Podaj b: "<<endl;
+    cin>>y;
+    cout<<"Podaj c: "<<endl;
+    cin>>z;
+    pole.set_a_b_c(x, y, z);
+    wynik = pole.get_a_b_c(x, y, z);
+    cout<<"Pole = "<<wynik<<endl;
     return 0;
 }
 
