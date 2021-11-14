@@ -2,6 +2,9 @@
 using namespace std;
 
 class Pojazd{
+private:
+    static int najnowsza_wersja_oprogramowania;
+    int zainstalowana_wersja_oprogramowania;
 public:
     Pojazd(string numer_rejestracyjny, string nazwa, int ilosc_miejsc, string marka, string typ);
     Pojazd(Pojazd& pojazd);
@@ -25,6 +28,9 @@ public:
     void set_nazwa(string nazwa);
     void set_numer_rejestracyjny(string numer_rejestracyjny);
     ~Pojazd();
+    void wypisz_oprogramowanie();
+    void zaktualizuj_oprogramowanie();
+    static void funkcja_najnowsza_wersja_oprogramowania(int nowa_wersja);
 };
 
 Pojazd::Pojazd(string numer_rejestracyjny, string nazwa, int ilosc_miejsc, string marka, string typ)
@@ -38,6 +44,7 @@ Pojazd::Pojazd(string numer_rejestracyjny, string nazwa, int ilosc_miejsc, strin
         this->tab[i] = "PUSTE";
     }
 }
+
 
 Pojazd::~Pojazd()
 {
@@ -54,6 +61,7 @@ Pojazd::~Pojazd()
         for (int i = 0; i < ilosc_miejsc; i++) {
             tab[i] = pojazd.tab[i];
         }
+        zainstalowana_wersja_oprogramowania = pojazd.zainstalowana_wersja_oprogramowania;
     }
 void Pojazd::wypisz(){
 
@@ -86,9 +94,22 @@ string Pojazd::get_marka(){
 string Pojazd::get_typ(){
     return typ;
 }
+int Pojazd::najnowsza_wersja_oprogramowania = 1;
+
+void Pojazd::wypisz_oprogramowanie() {
+    cout << "Pojazd: " << nazwa << "\tZainstalowana wersja oprogramowania: " << zainstalowana_wersja_oprogramowania << "\tNajnowsza wersja oprogramowania: " << najnowsza_wersja_oprogramowania << endl;
+}
+
+void Pojazd::zaktualizuj_oprogramowanie() {
+    zainstalowana_wersja_oprogramowania = najnowsza_wersja_oprogramowania;
+}
+
+void Pojazd::funkcja_najnowsza_wersja_oprogramowania(int nowaWersja) {
+    najnowsza_wersja_oprogramowania = nowaWersja;
+}
 int main(){
     Pojazd p1("KR18634", "Panda", 5, "Fiat", "osobowe");
-    Pojazd p2("KRA147321","P2",8,"Ford","bus");
+    Pojazd p2("KRA14731","Zafira",7,"Opel","osobowe");
 
     p1.wypisz();
     p2.wypisz();
@@ -109,6 +130,31 @@ int main(){
     p1.set_numer_rejestracyjny("KRA6543");
     cout<<"\nDane po nowych setterach\n";
     p1.wypisz();
+
+
+    //stałe
+
+    cout << "\n\nZadania stale:\n";
+    p1.set_nazwa("Punto");
+
+    cout << "\nWersja oprogramowania:\n";
+    p1.wypisz_oprogramowanie();
+    p2.wypisz_oprogramowanie();
+
+    cout << "\nNowa wersja oprogramowania...\n";
+    Pojazd::funkcja_najnowsza_wersja_oprogramowania(2);
+
+
+    cout << "\nWersja oprogramowania:\n";
+    p1.wypisz_oprogramowanie();
+    p2.wypisz_oprogramowanie();
+
+    cout << "\nZaktualizowanie p1...\n";
+    p1.zaktualizuj_oprogramowanie();
+
+    cout << "\nWersja oprogramowania:\n";
+    p1.wypisz_oprogramowanie();
+    p2.wypisz_oprogramowanie();
 
     return 0;
 }
