@@ -141,7 +141,7 @@ int main(){
     p1.wypisz_oprogramowanie();
     p2.wypisz_oprogramowanie();
 
-    cout << "\nNowa wersja oprogramowania...\n";
+    cout << "\nNowa wersja oprogramowania:\n";
     Pojazd::funkcja_najnowsza_wersja_oprogramowania(2);
 
 
@@ -149,7 +149,7 @@ int main(){
     p1.wypisz_oprogramowanie();
     p2.wypisz_oprogramowanie();
 
-    cout << "\nZaktualizowanie p1...\n";
+    cout << "\nZaktualizowanie p1:\n";
     p1.zaktualizuj_oprogramowanie();
 
     cout << "\nWersja oprogramowania:\n";
