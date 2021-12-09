@@ -1,8 +1,7 @@
-#include "../include/funkcje_zaprzyjaznione.h"
-
+#include "../include/Node.h"
 #include <iostream>
 #include<math.h>
-void Node::wspolczynniki(double x, double y)
+void Node::values(double x, double y)
 {
     this->x=x;
     this->y=y;
